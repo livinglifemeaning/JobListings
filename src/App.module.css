@@ -1,0 +1,84 @@
+.main {
+  background-color: var(--c-100);
+  min-height: 100vh;
+}
+
+.accent {
+  background-color: var(--c-500);
+}
+
+.accent img {
+  width: 100%;
+}
+
+.searchContainer {
+  padding: 0 1rem;
+  translate: 0 -1.5rem;
+}
+.searchBar {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  max-width: 80rem;
+  box-shadow: 0 5px 10px hsla(180, 29%, 50%, 0.2);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.tags {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  grid-column: span 2;
+}
+
+.tag {
+  background-color: var(--c-200);
+  font-weight: 700;
+  color: var(--c-500);
+  border-radius: 5px;
+  line-height: 1em;
+  display: flex;
+}
+
+.tagText {
+  padding: 0.5rem;
+}
+.delete {
+  background-color: var(--c-500);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-inline: 0.5rem;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.delete:hover {
+  background-color: var(--c-800);
+}
+.delete img {
+  width: 1.4rem;
+}
+.clear {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--c-600);
+  grid-column: 3;
+  justify-self: end;
+}
+
+.clear:hover{
+  color: var(--c-500); 
+  text-decoration: underline;
+}
+@media (min-width: 45em) {
+  .searchContainer {
+    padding: 0 5rem;
+  }
+
+  .searchContainer + div {
+    padding-top: 0;
+  }
+}

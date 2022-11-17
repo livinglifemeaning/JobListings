@@ -1,0 +1,13 @@
+.cards{
+    display: grid; 
+    flex-direction: column; 
+    gap: 2rem; 
+    padding: 2rem 1rem; 
+}
+
+@media (min-width: 45em) {
+    .cards{
+        gap: 1rem; 
+       padding: 3rem 5rem;  
+    }
+}
